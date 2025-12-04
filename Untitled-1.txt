@@ -1,0 +1,12 @@
+jovnat/
+├── index.html              (responsive markup with mobile nav)
+├── style.css               (refined colors, typography, mobile styles)
+├── README.md               (setup instructions)
+├── serve.ps1               (local preview script)
+├── scripts/
+│   └── generate_images.py  (image generator)
+└── images/
+    ├── hero-*.{jpg,webp}
+    ├── sourdough-*.{jpg,webp}
+    ├── croissant-*.{jpg,webp}
+    └── cake-*.{jpg,webp}
