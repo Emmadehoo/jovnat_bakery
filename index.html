@@ -14,7 +14,16 @@
   <div class="site">
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="#">Jovnat</a>
+        <a class="brand" href="#" aria-label="Jovnat Bakery home">
+          <svg class="brand-logo" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="false">
+            <circle cx="40" cy="40" r="38" fill="none" stroke="currentColor" stroke-width="2"></circle>
+            <path d="M 30 45 Q 40 30 50 45" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></path>
+            <circle cx="35" cy="50" r="3" fill="currentColor"></circle>
+            <circle cx="45" cy="50" r="3" fill="currentColor"></circle>
+            <path d="M 35 55 Q 40 58 45 55" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+          <span class="brand-name">Jovnat</span>
+        </a>
         <nav class="main-nav" id="mainNav">
           <a href="#home">Home</a>
           <a href="#about">About</a>
@@ -33,72 +42,229 @@
     <main>
       <!-- Hero -->
       <section id="home" class="hero">
-        <div class="container hero-grid">
-          <div class="hero-text">
-            <div class="hero-heading">
-              <svg class="hero-logo" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="40" cy="40" r="38" fill="none" stroke="currentColor" stroke-width="2"/>
-                <path d="M 30 45 Q 40 30 50 45" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-                <circle cx="35" cy="50" r="3" fill="currentColor"/>
-                <circle cx="45" cy="50" r="3" fill="currentColor"/>
-                <path d="M 35 55 Q 40 58 45 55" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-              <h1>Jovnat Bakery</h1>
-            </div>
-            <p class="lead">Ship clean, responsive landing pages for projects and products. Fast to edit, easy to share.</p>
-            <div class="actions">
-              <a class="btn primary" href="#products">Explore Templates</a>
-              <a class="btn outline" href="#visit">Get Started</a>
+        <div class="hero-wrapper">
+          <div class="hero-content-column">
+            <div class="container">
+              <div class="hero-content">
+                <div class="hero-badge">Freshly Baked Daily Since 2010</div>
+                <div class="hero-heading">
+                  <svg class="hero-logo" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="40" cy="40" r="38" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <path d="M 30 45 Q 40 30 50 45" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    <circle cx="35" cy="50" r="3" fill="currentColor"/>
+                    <circle cx="45" cy="50" r="3" fill="currentColor"/>
+                    <path d="M 35 55 Q 40 58 45 55" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                  <h1>Jovnat Bakery</h1>
+                </div>
+                <p class="hero-subtitle">Handcrafted breads, pastries, and custom cakes made fresh daily in our local bakery</p>
+                <ul class="hero-features">
+                  <li>Artisan Sourdough & Fresh Bread</li>
+                  <li>Buttery Croissants & Pastries</li>
+                  <li>Custom Celebration Cakes</li>
+                </ul>
+                <div class="hero-actions">
+                  <a class="btn primary" href="#products">Shop Now</a>
+                  <a class="btn outline" href="#visit">Reserve a Cake</a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="hero-media">
-            <picture>
-              <source type="image/webp" srcset="images/hero-480x320.webp 480w, images/hero-800x533.webp 800w, images/hero-1200x800.webp 1200w" sizes="(max-width:600px) 480px, (max-width:1200px) 800px, 1200px">
-              <source type="image/jpeg" srcset="images/hero-480x320.jpg 480w, images/hero-800x533.jpg 800w, images/hero-1200x800.jpg 1200w" sizes="(max-width:600px) 480px, (max-width:1200px) 800px, 1200px">
-              <img class="photo" src="images/hero-800x533.jpg" alt="Interior view of Jovnat Bakery with fresh breads on display" loading="lazy" width="1200" height="800">
-            </picture>
-            <div class="photo-caption">Hero image (responsive JPG/WebP)</div>
+          <div class="hero-image-column">
+            <div class="hero-image-container">
+              <picture>
+                <source type="image/jpeg" srcset="images/anisa-cakesandbakes-c07YNJmNfaE-unsplash.jpg">
+                <img class="img-cover" src="images/anisa-cakesandbakes-c07YNJmNfaE-unsplash.jpg" alt="Celebration Cake" loading="eager" width="1200" height="800">
+              </picture>
+              <div class="hero-image-fade"></div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- About -->
-      <section id="about" class="section container">
-        <h2>About</h2>
-        <p>Jovnat provides lightweight, responsive project pages designed for clarity and conversion. Focus on your work — we'll handle the presentation.</p>
+      <section id="about" class="section about-section">
+        <div class="container">
+          <div class="about-header">
+            <h2>About Jovnat Bakery</h2>
+            <p class="about-intro">Crafting artisan baked goods with passion and premium ingredients since 2010</p>
+          </div>
+          
+          <div class="about-grid">
+            <div class="about-content">
+              <p>At Jovnat Bakery, we believe that every great moment deserves a fresh, delicious treat. Located in the heart of Gulu City, we are a community-focused bakery dedicated to serving high-quality pastries, cakes, bread, and special-order desserts made with love and the freshest ingredients.</p>
+              
+              <p>Founded with a passion for creativity and flavor, Jovnat Bakery has grown into a trusted home for people who value great taste and excellent service. Whether you're stopping by for your morning bread, celebrating a birthday, planning a wedding, or simply craving something sweet, our team is committed to making every bite memorable.</p>
+
+              <div class="about-values">
+                <h3>Our Values</h3>
+                <ul class="values-list">
+                  <li><strong>Quality</strong> — Only the finest ingredients and traditional techniques</li>
+                  <li><strong>Freshness</strong> — Baked daily, never stale or pre-made</li>
+                  <li><strong>Community</strong> — Supporting local suppliers and celebrating local moments</li>
+                  <li><strong>Creativity</strong> — Custom designs and unique flavors</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="about-stats">
+              <div class="stat-card">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Years of Excellence</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">1000+</div>
+                <div class="stat-label">Happy Customers</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Daily Fresh Recipes</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Premium Quality</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What We Offer & Why Choose Us -->
+      <section id="offerings" class="section offerings-section">
+        <div class="container">
+          <div class="offerings-intro">
+            <p class="offerings-tagline">At Jovnat Bakery, we don't just bake— we make moments sweeter.</p>
+          </div>
+
+          <div class="offerings-grid">
+            <div class="offering-card">
+              <h3>What We Offer</h3>
+              <ul class="offering-list">
+                <li>Freshly baked bread</li>
+                <li>Custom-designed cakes for all occasions</li>
+                <li>Pastries, cupcakes, and cookies</li>
+                <li>Wedding and party dessert packages</li>
+                <li>Special orders tailored to your needs</li>
+              </ul>
+            </div>
+
+            <div class="offering-card">
+              <h3>Why Choose Us</h3>
+              <ul class="offering-list">
+                <li>Daily fresh products</li>
+                <li>High-quality ingredients</li>
+                <li>Creative, custom cake designs</li>
+                <li>Friendly and timely service</li>
+                <li>A bakery that truly cares about its community</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Products -->
-      <section id="products" class="section container">
-        <h2>Templates</h2>
-        <div class="products-grid">
-          <article class="product">
-            <picture class="thumb">
-              <source type="image/webp" srcset="images/sourdough-320x220.webp 320w, images/sourdough-640x440.webp 640w" sizes="(max-width:520px) 320px, 640px">
-              <source type="image/jpeg" srcset="images/sourdough-320x220.jpg 320w, images/sourdough-640x440.jpg 640w" sizes="(max-width:520px) 320px, 640px">
-              <img src="images/sourdough-640x440.jpg" alt="Simple landing template" loading="lazy" width="640" height="440">
-            </picture>
-            <h3>Landing</h3>
-            <p>Clear product pages built for conversion and speed.</p>
-          </article>
-          <article class="product">
-            <picture class="thumb">
-              <source type="image/webp" srcset="images/croissant-320x220.webp 320w, images/croissant-640x440.webp 640w" sizes="(max-width:520px) 320px, 640px">
-              <source type="image/jpeg" srcset="images/croissant-320x220.jpg 320w, images/croissant-640x440.jpg 640w" sizes="(max-width:520px) 320px, 640px">
-              <img src="images/croissant-640x440.jpg" alt="Showcase template" loading="lazy" width="640" height="440">
-            </picture>
-            <h3>Showcase</h3>
-            <p>Beautiful presentation for projects and case studies.</p>
-          </article>
-          <article class="product">
-            <picture class="thumb">
-              <source type="image/webp" srcset="images/cake-320x220.webp 320w, images/cake-640x440.webp 640w" sizes="(max-width:520px) 320px, 640px">
-              <source type="image/jpeg" srcset="images/cake-320x220.jpg 320w, images/cake-640x440.jpg 640w" sizes="(max-width:520px) 320px, 640px">
-              <img src="images/cake-640x440.jpg" alt="Product docs template" loading="lazy" width="640" height="440">
-            </picture>
-            <h3>Docs</h3>
-            <p>Concise documentation pages with clear hierarchy.</p>
-          </article>
+      <section id="products" class="section products-section">
+        <div class="container">
+          <div class="products-header">
+            <h2>Our Delicious Collection</h2>
+            <p class="products-subtitle">Each product is crafted with passion and the finest ingredients, baked fresh daily</p>
+          </div>
+
+          <div class="products-grid">
+            <article class="product-card">
+              <div class="product-visual">
+                <div class="product-image-wrapper">
+                      <img class="img-cover" src="images/mae-mu-ppOPjqAJ3Mw-unsplash.jpg" alt="Artisan sourdough bread" loading="lazy" width="640" height="440">
+                  <div class="product-badge">Fresh Daily</div>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3>Artisan Sourdough</h3>
+                <p class="product-description">Slow-fermented, crisp crust with an open crumb. Made with a 50-year-old starter and premium organic flour.</p>
+                <ul class="product-features">
+                  <li>Long fermentation</li>
+                  <li>Organic ingredients</li>
+                  <li>Hand-shaped</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="product-card featured-card">
+              <div class="product-visual">
+                <div class="featured-badge">FEATURED</div>
+                <div class="product-image-wrapper">
+                  <img class="img-cover" src="images/brett-jordan-g3cAM2o8GUs-unsplash.jpg" alt="Butter croissants" loading="lazy" width="640" height="440">
+                  <div class="product-badge">Bestseller</div>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3>Butter Croissants</h3>
+                <p class="product-description">Flaky, buttery layers made with European-style butter. The perfect pastry for breakfast or any time of day.</p>
+                <ul class="product-features">
+                  <li>European butter</li>
+                  <li>70 layers</li>
+                  <li>Warm & flaky</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-visual">
+                <div class="product-image-wrapper">
+                  <img class="img-cover" src="images/yulia-khlebnikova-29D6U5sZfjk-unsplash.jpg" alt="Custom celebration cake" loading="lazy" width="640" height="440">
+                  <div class="product-badge">Custom Orders</div>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3>Celebration Cakes</h3>
+                <p class="product-description">Rotating seasonal flavors featuring local fruit and house-made fillings. Perfect for special moments and milestones.</p>
+                <ul class="product-features">
+                  <li>Seasonal flavors</li>
+                  <li>Customizable</li>
+                  <li>Premium fillings</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <!-- Small Gallery to showcase more of our baked goods -->
+          <div class="gallery-grid" aria-hidden="false">
+            <div class="gallery-item">
+              <picture>
+                <source type="image/jpeg" srcset="images/yulia-khlebnikova-29D6U5sZfjk-unsplash.jpg">
+                <img class="img-cover" src="images/yulia-khlebnikova-29D6U5sZfjk-unsplash.jpg" alt="Layered cake close-up" loading="lazy" width="640" height="440">
+              </picture>
+            </div>
+            <div class="gallery-item">
+              <picture>
+                <source type="image/jpeg" srcset="images/brett-jordan-g3cAM2o8GUs-unsplash.jpg">
+                <img class="img-cover" src="images/brett-jordan-g3cAM2o8GUs-unsplash.jpg" alt="Assorted pastries" loading="lazy" width="640" height="440">
+              </picture>
+            </div>
+            <div class="gallery-item">
+              <picture>
+                <source type="image/jpeg" srcset="images/mae-mu-ppOPjqAJ3Mw-unsplash.jpg">
+                <img class="img-cover" src="images/mae-mu-ppOPjqAJ3Mw-unsplash.jpg" alt="Bread selection" loading="lazy" width="640" height="440">
+              </picture>
+            </div>
+            <div class="gallery-item">
+              <picture>
+                <source type="image/jpeg" srcset="images/aneta-voborilova-c8ovzYe3z0s-unsplash.jpg">
+                <img class="img-cover" src="images/aneta-voborilova-c8ovzYe3z0s-unsplash.jpg" alt="Cookies and treats" loading="lazy" width="640" height="440">
+              </picture>
+            </div>
+          </div>
+
+          <div class="products-cta">
+            <div class="cta-content">
+              <h3>Ready to Taste Our Treats?</h3>
+              <p>Visit us today or place a custom order online. All orders are available for same-day pickup.</p>
+              <div class="cta-buttons">
+                <a class="btn primary" href="#visit">Visit Us Today</a>
+                <a class="btn outline" href="mailto:order@jovnat.example">Place Custom Order</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -112,8 +278,54 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <div>© <span id="year"></span> Jovnat Bakery</div>
-        <div class="links"><a href="#">Privacy</a> · <a href="#">Terms</a></div>
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="footer-brand">Jovnat Bakery</div>
+            <p class="footer-description">Handcrafted breads, pastries, and cakes baked fresh daily since 2010.</p>
+          </div>
+          <div class="footer-center">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#products">Our Treats</a></li>
+              <li><a href="#visit">Visit Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-right">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="https://facebook.com/jovnatbakery" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="https://twitter.com/jovnatbakery" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.514l-5.106-6.677-5.848 6.677H2.421l7.782-8.917L2.25 2.25h6.514l4.915 6.494L17.51 2.25h.734zm-1.106 17.96h1.828L5.25 4.122H3.314L17.138 20.21z"/></svg>
+              </a>
+              <a href="https://instagram.com/jovnatbakery" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+              </a>
+              <a href="https://youtube.com/jovnatbakery" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+              <a href="https://tiktok.com/@jovnatbakery" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 1 1-5.92-1.04A2.89 2.89 0 0 1 9.4 13.25h3.45a6.35 6.35 0 0 0 6.74-6.56v-3z"/></svg>
+              </a>
+              <a href="https://pinterest.com/jovnatbakery" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 12c0 2.21 1.79 4 4 4s4-1.79 4-4-1.79-4-4-4-4 1.79-4 4z" fill="currentColor"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-links">
+            <a href="#privacy">Privacy Policy</a>
+            <span>•</span>
+            <a href="#terms">Terms of Service</a>
+            <span>•</span>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-copyright">© <span id="year"></span> Jovnat Bakery. All rights reserved.</div>
+        </div>
       </div>
     </footer>
   </div>
