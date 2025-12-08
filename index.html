@@ -9,13 +9,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
   <div class="site">
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="#" aria-label="Jovnat Bakery home">
-          <svg class="brand-logo" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="false">
+          <img class="brand-logo-img" src="images/logo.png" alt="Jovnat Bakery" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'">
+          <!-- Inline SVG fallback (hidden by default, shown if image fails) -->
+          <svg class="brand-logo-svg" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="false" style="display:none">
             <circle cx="40" cy="40" r="38" fill="none" stroke="currentColor" stroke-width="2"></circle>
             <path d="M 30 45 Q 40 30 50 45" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></path>
             <circle cx="35" cy="50" r="3" fill="currentColor"></circle>
@@ -231,25 +234,25 @@
           <div class="gallery-grid" aria-hidden="false">
             <div class="gallery-item">
               <picture>
-                <source type="image/jpeg" srcset="images/yulia-khlebnikova-29D6U5sZfjk-unsplash.jpg">
+                <source type="image/jpeg" src="images/yulia-khlebnikova-29D6U5sZfjk-unsplash.jpg">
                 <img class="img-cover" src="images/yulia-khlebnikova-29D6U5sZfjk-unsplash.jpg" alt="Layered cake close-up" loading="lazy" width="640" height="440">
               </picture>
             </div>
             <div class="gallery-item">
               <picture>
-                <source type="image/jpeg" srcset="images/brett-jordan-g3cAM2o8GUs-unsplash.jpg">
+                <source type="image/jpeg" src="images/brett-jordan-g3cAM2o8GUs-unsplash.jpg">
                 <img class="img-cover" src="images/brett-jordan-g3cAM2o8GUs-unsplash.jpg" alt="Assorted pastries" loading="lazy" width="640" height="440">
               </picture>
             </div>
             <div class="gallery-item">
               <picture>
-                <source type="image/jpeg" srcset="images/mae-mu-ppOPjqAJ3Mw-unsplash.jpg">
+                <source type="image/jpeg" src="images/mae-mu-ppOPjqAJ3Mw-unsplash.jpg">
                 <img class="img-cover" src="images/mae-mu-ppOPjqAJ3Mw-unsplash.jpg" alt="Bread selection" loading="lazy" width="640" height="440">
               </picture>
             </div>
             <div class="gallery-item">
               <picture>
-                <source type="image/jpeg" srcset="images/aneta-voborilova-c8ovzYe3z0s-unsplash.jpg">
+                <source type="image/jpeg" src="images/aneta-voborilova-c8ovzYe3z0s-unsplash.jpg">
                 <img class="img-cover" src="images/aneta-voborilova-c8ovzYe3z0s-unsplash.jpg" alt="Cookies and treats" loading="lazy" width="640" height="440">
               </picture>
             </div>

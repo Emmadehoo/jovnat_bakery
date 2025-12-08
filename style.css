@@ -30,6 +30,8 @@ body{
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
 .brand{font-family:'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:var(--text);font-weight:700;letter-spacing:0.4px;text-decoration:none;display:inline-flex;align-items:center;gap:12px}
 .brand-logo{width:40px;height:40px;color:var(--accent);flex-shrink:0;display:block}
+.brand-logo-img{width:44px;height:44px;object-fit:cover;border-radius:8px;flex-shrink:0;display:block}
+.brand-logo-svg{width:40px;height:40px;color:var(--accent);flex-shrink:0;display:block}
 .brand-name{font-weight:800;font-size:1.05rem}
 .main-nav{display:flex;gap:18px}
 .main-nav a{color:var(--muted);text-decoration:none;font-weight:600;padding:8px;border-radius:8px}
