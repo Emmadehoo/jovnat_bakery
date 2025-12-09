@@ -76,58 +76,7 @@
             </div>
           </div>
         </div>
-      </section><div class="slideshow">
-        <img src="images/image1.jpg" class="slide active">
-        <img src="images/image2.jpg" class="slide">
-        <img src="images/image3.jpg" class="slide">
-      </div>
-      
-      <style>
-      .slide {
-        position: absolute;
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-      }
-      .slide.active {
-        opacity: 1;
-      }
-      </style>
-      
-      <script>
-      let current = 0;
-      const slides = document.querySelectorAll('.slide');
-      
-      function nextSlide() {
-        slides[current].classList.remove('active');
-        current = (current + 1) % slides.length;
-        slides[current].classList.add('active');
-      }
-      
-      setInterval(nextSlide, 3000); // Change every 3 seconds
-      </script>
-      const images = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
-      let currentIndex = 0;
-      
-      function changeImage() {
-        document.body.style.backgroundImage = `url('images/${images[currentIndex]}')`;
-        document.body.style.transition = 'background-image 1s ease-in-out';
-        
-        currentIndex = (currentIndex + 1) % images.length;
-      }
-      
-      setInterval(changeImage, 3000);
-      from PIL import Image
-      import os, time
-      
-      image_folder = 'path/to/your/images'
-      images = [img for img in os.listdir(image_folder) if img.endswith(('.jpg', '.png'))]
-      
-      while True:
-          for image in images:
-              img = Image.open(os.path.join(image_folder, image))
-              img.show()
-              time.sleep(3) # Display each image for 3 seconds
-      
+      </section>
 
       <!-- About -->
       <section id="about" class="section about-section">
