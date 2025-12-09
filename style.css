@@ -37,7 +37,11 @@ body{
 .brand-logo-svg{width:40px;height:40px;color:var(--accent);flex-shrink:0;display:block}
 .brand-name{font-weight:800;font-size:1.05rem}
 .main-nav{display:flex;gap:18px}
-.main-nav a{color:var(--muted);text-decoration:none;font-weight:600;padding:8px;border-radius:8px}
+.main-nav a{color:var(--muted);text-decoration:none;font-weight:600;padding:8px;border-radius:8px;transition: all 0.3s ease;}
+.main-nav a:hover {
+  color: var(--accent);
+  text-shadow: 0 0 10px var(--accent-2), 0 0 20px var(--accent-2);
+}
 
 /* Mobile nav toggle */
 .nav-toggle{display:none;flex-direction:column;gap:5px;background:transparent;border:none;cursor:pointer;padding:8px}
